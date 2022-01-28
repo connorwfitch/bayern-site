@@ -12,28 +12,40 @@ button:hover {
 
 /* header styles */
 header {
-  background-color: black;
+  background-color: #DC052D;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header > img {
-  height: 50px;
+header > a > img {
+  height: 75px;
   margin: 10px;
   margin-left: 40px;
 }
+header > a > img {
+  height: 75px;
+  margin: 10px;
+  margin-left: 40px;
+}
+header > h2 {
+  color: white;
+}
 header > button {
-  color: black;
-  background-color: #dc2f2f;
+  color: white;
+  background-color: #0066B2;
   border-radius: 3px;
-  border: 0px;
+  border: 2px solid white;
   font-weight: bolder;
   height: 35px;
   width: 70px;
   margin-right: 40px;
 }
 header > button:active {
-  background-color: #333;
+  background-color: #00467c;
+}
+header > button:hover {
+  box-shadow: 0px 0px 10px #333;
+  opacity: 1;
 }
 
 /* Nav Bar */
@@ -42,7 +54,7 @@ ul.nav-bar {
   margin: 0px;
   padding: 0px;
   overflow: hidden;
-  background-color: #333;
+  background-color: #0066B2;
   display: flex;
   justify-content: space-around;
 }
@@ -52,13 +64,14 @@ ul.nav-bar > li {
   margin-top: -1px;
 }
 ul.nav-bar > li > a {
-  color: #dc2f2f;
+  color: white;
   padding: 14px 30px;
   text-decoration: none;
   margin: 0px;
+  font-weight: bold;
 }
 ul.nav-bar > li > a:hover {
-  background-color: #111;
+  background-color: #00467c;
 }
 
 /* primary article */
@@ -72,7 +85,7 @@ div#primary > * {
   width: 50%;
 }
 div#primary h2 {
-  color: #dc2f2f;
+  color: #DC052D;
   margin: 0px;
 }
 div#author-socials {
@@ -85,7 +98,7 @@ div#author-socials > span {
 }
 span > button {
   color: #333;
-  background-color: #dc2f2f;
+  background-color: #DC052D;
   border-radius: 3px;
   border: 0px;
   font-weight: bold;
@@ -100,7 +113,7 @@ span > button {
   text-align: center;
   padding-top: 4px;
   text-decoration: none;
-  background-color: #dc2f2f;
+  background-color: #DC052D;
   color: #333;
   border: 0px;
   border-radius: 3px;
@@ -116,10 +129,10 @@ div#primary > h3 {
   margin: 5px;
 }
 div#more-info {
-  border: 5px solid #dc2f2f;
+  border: 5px solid #DC052D;
 }
 div#more-info * {
-  color: #dc2f2f;
+  color: #DC052D;
 }
 div#more-info h4 {
   margin: 5px;
