@@ -125,12 +125,11 @@ span > button {
 div#primary > img {
   margin: 15px;
 }
-div#primary > h3 {
-  margin: 10px;
-  margin-bottom: 0px;
-}
 div#primary > p {
   margin: 5px;
+}
+div#primary > p + h2 {
+  margin-top: 20px;
 }
 p > a {
   color: #0066B2;
