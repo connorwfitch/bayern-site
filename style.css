@@ -126,33 +126,20 @@ div#primary > img {
   margin: 15px;
 }
 div#primary > h3 {
+  margin: 10px;
+  margin-bottom: 0px;
+}
+div#primary > p {
   margin: 5px;
 }
-div#more-info {
-  border: 5px solid #DC052D;
-}
-div#more-info * {
-  color: #DC052D;
-}
-div#more-info h4 {
-  margin: 5px;
-}
-div#iter-rec {
-  display: flex;
-  flex-flow: column wrap;
-  align-content: space-around;
-  height: 175px;
-}
-div#iter-rec a {
+p > a {
+  color: #0066B2;
   text-decoration: none;
 }
-div#iter-rec a:hover {
+p > a:hover {
   text-decoration: underline;
-  border: 0px;
-  border-radius: 3px;
-  background-color: lightgray;
 }
-
+/* Footer */
 footer {
   margin-top: 50px;
   background-color: #333;
@@ -160,29 +147,23 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
-
 footer > img {
   width: 200px;
-  height: 50px;
   margin: 10px;
   margin-left: 40px;
 }
-
 footer ul {
   list-style-type: none;
   margin-right: 30px;
 }
-
 footer li {
   display: inline;
   margin-right: 10px;
 }
-
 footer a {
   color: white;
   text-decoration: none;
 }
-
 footer a:hover {
   text-decoration: underline;
 }
