@@ -11,83 +11,85 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<header>
-  <!-- header, contains bayern logo, title, and sign in button -->
-  <a href="https://fcbayern.com/en" target="_blank"><img src="../bayern-logo.png" alt="FC Bayern Logo"></a>
-  <h2>FC Bayern München Fan Site</h2>
-  <button>Sign In</button>
-</header>
+<div class="page-container">
+  <div class="content-wrap">
+    <header>
+      <!-- header, contains bayern logo, title, and sign in button -->
+      <a href="https://fcbayern.com/en" target="_blank"><img src="../bayern-logo.png" alt="FC Bayern Logo"></a>
+      <h2>FC Bayern München Fan Site</h2>
+      <button>Sign In</button>
+    </header>
 
-<div>
-  <!-- banner/navigation bar links -->
-  <ul class="nav-bar">
-    <li><a href="../index.html">Home</a></li>
-    <li><a href="#">Fan Survey</a></li>
-    <li><a href="">News</a></li>
-    <li><a href="">Players</a></li>
-  </ul>
-</div>
-<div class="primary">
-  <h1>FC Bayern München Fan Survey</h1>
-  <form action="/form_url" method="post">
-    <fieldset>
-      <div>
-        <label for="firstName">First Name:</label>
-        <input type="text" id="firstName" name="first_name">
-      </div>
-      <div>
-        <label for="lastName">Last Name:</label>
-        <input type="text" id="lastName" name="last_name">
-      </div>
-      <div>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
-      </div>
-      <div>
-        <p>Choose your favorite player(s):</p>
-        <div>
-          <!-- probably want to use grid layout for this... -->
-          <input type="checkbox" name="robben" id="robben">
-          <label for="robben">Arjen Robben</label>
-          <input type="checkbox" name="ribery" id="ribery">
-          <label for="ribery">Franck Ribéry</label>
-          <input type="checkbox" name="neuer" id="neuer">
-          <label for="neuer">Manuel Neuer</label>
-          <input type="checkbox" name="muller1" id="muller1">
-          <label for="muller1">Gerd Müller</label>
-          <input type="checkbox" name="muller2" id="muller2">
-          <label for="muller2">Thomas Müller</label>
-          <input type="checkbox" name="lahm" id="lahm">
-          <label for="lahm">Philipp Lahm</label>
-          <input type="checkbox" name="lewy" id="lewy">
-          <label for="lewy">Robert Lewandowski</label>
-          <input type="checkbox" name="sane" id="sane">
-          <label for="sane">Leroy Sané</label>
-          <input type="checkbox" name="kimmich" id="kimmich">
-          <label for="kimmich">Joshua Kimmich</label>
-        </div>
-      </div>
-      <div>
-        <label for="moment">Favorite FC Bayern Memory:</label>
-        <textarea id="moment" name="moment" rows="3"></textarea>
-      </div>
-      <div>
-        <button type="reset">Reset</button>
-        <button type="submit">Submit</button>
-      </div>
-    </fieldset>
-  </form>
-</div>
-<footer>
-  <img src="../mia-san-mia.png" alt="Mia San Mia">
-  <ul>
-    <li><a href="">Contact</a></li>
-    <li><a href="">About Us</a></li>
-    <li><a href="">Terms of Use</a></li>
-    <li><a href="">FAQs</a></li>
-    <li><a href="">Privacy Policy</a></li>
-  </ul>
-</footer>
+    <div>
+      <!-- banner/navigation bar links -->
+      <ul class="nav-bar">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#">Fan Survey</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="players.html">Players</a></li>
+      </ul>
+    </div>
+    <div class="primary">
+      <h1>FC Bayern München Fan Survey</h1>
+      <form action="/form_url" method="post">
+        <fieldset>
+          <h2>Contact Information</h2>
+          <div id="contact-survey">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="first_name">
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="last_name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+          </div>
+          <h2>Survey Questions</h2>
+          <div>
+            <p>Choose your favorite player(s):</p>
+            <div id="player-survey">
+              <!-- probably want to use grid layout for this... -->
+              <input type="checkbox" name="robben" id="robben">
+              <label for="robben">Arjen Robben</label>
+              <input type="checkbox" name="ribery" id="ribery">
+              <label for="ribery">Franck Ribéry</label>
+              <input type="checkbox" name="muller1" id="muller1">
+              <label for="muller1">Gerd Müller</label>
+              <input type="checkbox" name="kimmich" id="kimmich">
+              <label for="kimmich">Joshua Kimmich</label>
+              <input type="checkbox" name="sane" id="sane">
+              <label for="sane">Leroy Sané</label>
+              <input type="checkbox" name="neuer" id="neuer">
+              <label for="neuer">Manuel Neuer</label>
+              <input type="checkbox" name="lahm" id="lahm">
+              <label for="lahm">Philipp Lahm</label>
+              <input type="checkbox" name="lewy" id="lewy">
+              <label for="lewy">Robert Lewandowski</label>
+              <input type="checkbox" name="muller2" id="muller2">
+              <label for="muller2">Thomas Müller</label>
+            </div>
+          </div>
+          <div id="moment-survey">
+            <label for="moment">Favorite FC Bayern Memory:</label>
+            <textarea id="moment" name="moment" rows="3"></textarea>
+          </div>
+          <div id="survey-buttons">
+            <button type="reset">Reset</button>
+            <button type="submit" id="submit">Submit</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+  <footer>
+    <img src="../mia-san-mia.png" alt="Mia San Mia">
+    <ul>
+      <li><a href="">Contact</a></li>
+      <li><a href="">About Us</a></li>
+      <li><a href="">Terms of Use</a></li>
+      <li><a href="">FAQs</a></li>
+      <li><a href="">Privacy Policy</a></li>
+    </ul>
+  </footer>
 
+</div>
 </body>
 </html>
