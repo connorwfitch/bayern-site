@@ -1,0 +1,14 @@
+h1 {
+  text-align: center;
+}
+div#news-list {
+  border: 5px solid #DC052D;
+  border-radius: 5px;
+}
+div#news-list a {
+  color: #0066B2;
+  text-decoration: none;
+}
+div#news-list a:hover {
+  text-decoration: underline;
+}
