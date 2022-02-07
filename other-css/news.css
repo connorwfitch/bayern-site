@@ -5,6 +5,9 @@ div#news-list {
   border: 5px solid #DC052D;
   border-radius: 5px;
 }
+div#news-list:hover {
+  box-shadow: 0px 0px 5px #333;
+}
 div#news-list a {
   color: #0066B2;
   text-decoration: none;
